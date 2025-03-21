@@ -1,68 +1,178 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Consat'Pev</title>
-    <link rel="stylesheet" href="./src/styles/global.css">
-    <link rel="stylesheet" href="./src/styles/navbar.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./src/styles/global.css" />
+    
+  </head>
+  <body>
     <header>
-        <nav class="nav">
-            <div class="container">
-                <div class="logo">
-                    <a href="#">Your Logo</a>
-                </div>
-                <div id="mainListDiv" class="main_list">
-                    <ul class="navlinks">
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Serviços</a></li>
-                        <li><a href="#">Nosso Time</a></li>
-                        <li><a href="#">Contato</a></li>
-                    </ul>
-                </div>
-                <span class="navTrigger">
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                </span>
-            </div>
-        </nav>
-        <section class="home">
-        </section>
-        <div style="height: 1000px">
-            <!-- just to make scrolling effect possible -->
-                <h2 class="myH2">What is this ?</h2>
-                <p class="myP">This is a responsive fixed navbar animated on scroll</p>
-                <p class="myP">I took inspiration from  ABDO STEIF (<a href="https://codepen.io/abdosteif/pen/bRoyMb?editors=1100">https://codepen.io/abdosteif/pen/bRoyMb?editors=1100</a>)
-                and Dicson <a href="https://codepen.io/dicson/pen/waKPgQ">(https://codepen.io/dicson/pen/waKPgQ)</a></p>
-                <p class="myP">I HOPE YOU FIND THIS USEFULL</p>
-                <p class="myP">Albi</p>
-                    <p class="myP">
-                    
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
-                </p>
+      <nav class="nav">
+        <div class="container">
+          <div class="logo">
+            <a href="#">Your Logo</a>
+          </div>
+          <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#services">Serviços</a></li>
+              <li><a href="#">Nossos Parceiros</a></li>
+              <li><a href="#contact">Contato</a></li>
+            </ul>
+          </div>
+          <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+          </span>
         </div>
+      </nav>
+      <section class="home view">
+        <div class="container-header">
+          <div class="header block">
+            <h2 class="titulo-header">Trabalhe Conosco</h2>
+            <p class="texto-header">
+              A Consat'Prev visa estabelecer um apoio e consultoria Juridica
+              baseado no <strong>Jus Postulandi</strong>, Trazendo ao povo o
+              conhecimento para postular ou se defender na Justiça sem a
+              necessidade de um advogado.
+            </p>
+          </div>
+        </div>
+      </section>
     </header>
 
+    <main id="services" class="servicos-container view">
+      <h1 class="title">Nossos Serviços</h1>
+      <article id="card-servicos" class="section">
+        <article id="services-container" class="services-container block">
+          <!-- Cards de serviços serão inseridos aqui atraves do javascript-->
+        </article>
+      </article>
+    </main>
+
+    <div id="about" class="about-container view">
+      <h1 class="title">Nossa História</h1>
+      <div class="timeline block">
+        <!-- Timeline serão inseridos aqui -->
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div class="modal-body">
+          <!-- Conteúdo do modal será inserido aqui -->
+        </div>
+      </div>
+    </div>
+
+    
+
+    <section id="testimonials">
+      <h2 class="title">Depoimento de clientes</h2>
+      <div class="testimonials">
+        <blockquote>
+          <p>"Lorem"</p>
+          <cite>- Nome do cliente</cite>
+        </blockquote>
+        <blockquote>
+          <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum quisquam necessitatibus molestiae,
+            explicabo in saepe, totam atque voluptas reiciendis esse quae tenetur. Quae, incidunt assumenda. Totam quia
+            delectus numquam soluta!."</p>
+          <cite>- Nome do cliente</cite>
+        </blockquote>
+      </div>
+    </section>
+
+
+    <section id="contact" class="view contato">
+      <div class="conteudoContado">
+          <h2 class="title">Contato</h2>
+      </div>
+      <div class="container-contact">
+          <div class="contatoInfo">
+              <div class="box">
+                  <div class="icone">
+                      <ion-icon name="location-outline"></ion-icon>
+                  </div>
+                  <div class="texto">
+                      <h3>Endereço</h3>
+                      <p>545 Rua Saturnino Pires de Godoy, <br> Cornélio Procópio, Paraná, <br>86300-000</p>
+                  </div>
+              </div>
+              <div class="box">
+                  <div class="icone">
+                    <i class="ph-thin ph-phone-call"></i>
+                  </div>
+                  <div class="texto">
+                      <h3>Telefone</h3>
+                      <p>(13) 98115-8016</p>
+                  </div>
+              </div>
+              <div class="box">
+                  <div class="icone">
+                      <i class="ph-thin ph-envelope-simple"></i>
+                  </div>
+                  <div class="texto">
+                      <h3>Email</h3>
+                      <p>consat.inter@gmail.com</p>
+                  </div>
+              </div>
+          
+              <h2 class="txt">Conecte-se comigo pelo</h2>
+              <ul class="redes">
+                  <li><a href="https://wa.me/13981158016" target="_blank"><i class="ph-thin ph-whatsapp-logo"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/adimar-sarkis-21b3a6239/" target="_blank"><i class="ph-thin ph-linkedin-logo"></i></a></li>
+              </ul>
+          </div>
+          <div class="contatoForm">
+              <h2>Mande a sua mensagem</h2>
+              <form action="">
+                  <div class="inputBox">
+                      <input type="text" id="nome" required="required">
+                      <span>Nome completo</span>
+                      <i></i>
+                  </div>
+                  <div class="inputBox">
+                      <input type="email" id="email" required="required">
+                      <span>Email</span>
+                      <i></i>
+                  </div>
+                  <div class="inputBox">
+                      <textarea required="required" id="msg"></textarea>
+                      <span>Sua mensagem...</span>
+                      <i></i>
+                  </div>
+                  <div class="inputBox">
+                      <input type="submit" id="enviar" value="Enviar">
+                  </div>
+              </form>
+          </div>
+      </div>
+  </section>
+    
+
+
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="./src/js/navbar.js"></script>
-
-<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script src="./src/js/servicos.js"></script>
+    <script src="./src/js/about.js"></script>
+    <script src="./src/js/contact.js"></script>
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
     <script>
-        $(window).scroll(function() {
-            if ($(document).scrollTop() > 50) {
-                $('.nav').addClass('affix');
-                console.log("OK");
-            } else {
-                $('.nav').removeClass('affix');
-            }
-        });
+      $(window).scroll(function () {
+        if ($(document).scrollTop() > 50) {
+          $(".nav").addClass("affix");
+          console.log("OK");
+        } else {
+          $(".nav").removeClass("affix");
+        }
+      });
     </script>
-</body>
+  </body>
 </html>

@@ -1,0 +1,112 @@
+.servicos-container{
+    background-color: #f3f4f6;
+    padding: 20px;
+}
+
+.section {
+    padding: 20px;
+    margin: 20px;
+   
+}
+
+.title {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 32px;
+    grid-auto-rows: 1fr;
+}
+@media screen and (width >=  640px) {
+    .services-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media (width >=  1024px) {
+    .services-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card .icon {
+    font-size: 32px;
+    color: #555;
+    margin-bottom: 10px;
+}
+.expanded{
+    grid-column: span 1 / span 1;
+    grid-row: span 1 / span 1;
+    order: -9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (width >= 640px) {
+    .expanded{
+        grid-column: span 2 / span 2;
+        grid-row: span 2 / span 2;
+    }
+}
+
+@media (width >= 1024px) {
+    .expanded{
+        grid-column: span 3 / span 3;
+        grid-row: span 3 / span 3;
+    }
+}
+.card .title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card .description {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.card .details {
+    display: none;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.card.expanded .details {
+    display: block;
+}
+
+.card.expanded .description {
+    display: none;
+}
+
+/* a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #004d40;
+} */

@@ -1,15 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
-html,
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Quicksand", sans-serif;
-    font-size: 62.5%;
-    font-size: 10px;
-}
-/*-- Inspiration taken from abdo steif -->
-/* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
 
 /* Navbar section */
 
@@ -63,7 +51,7 @@ body {
     text-decoration: none;
     color: #fff;
     line-height: 65px;
-    font-size: 2.4rem;
+    font-size: 1.7rem;
 }
 
 .nav div.main_list ul li a:hover {
@@ -73,15 +61,6 @@ body {
 
 /* Home section */
 
-.home {
-    width: 100%;
-    height: 100vh;
-    background-image: url(https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0f6908fa5e81286213c7211276e6b3d&auto=format&fit=crop&w=1500&q=80);
-    background-position: center top;
-	background-size:cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
 
 .navTrigger {
     display: none;
@@ -122,13 +101,14 @@ body {
     .nav div.main_list ul {
         flex-direction: column;
         width: 100%;
-        height: 100vh;
-        right: 0;
-        left: 0;
-        bottom: 0;
+        height: 40vh;
         background-color: #111;
         /*same background color of navbar*/
         background-position: center top;
+        z-index: 1;
+    }
+    .container-header{
+        z-index: -1;
     }
     .nav div.main_list ul li {
         width: 100%;
@@ -338,9 +318,75 @@ body {
     }
 }
 
+
+
+/* Header */
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0f6908fa5e81286213c7211276e6b3d&auto=format&fit=crop&w=1500&q=80);
+    background-position: center top;
+	background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 0 2rem;
+}
+
+.container-header{
+    margin: auto;
+    max-width: 1280px;
+    height: 600px;
+    padding-inline: 24px;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    top: calc(50% - calc(630px / 2));
+    color: aliceblue;
+    border-radius: 0px;
+    background: linear-gradient(315deg, #2d2d2d, #363636);
+    box-shadow:  -6px -6px 12px #2c2c2c,
+                 6px 6px 12px #393939;
+    display: flex;
+    
+}
+.header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 22px;
+    .titulo-header{
+        font-size: 8rem;
+        line-height: 1;
+        --tw-font-weight: 600;
+        font-weight: 600;
+    }
+    .texto-header, strong{
+        margin-top: 32px;
+        font-size: 4rem;
+        line-height: 1;
+        --tw-tracking: -0.025em;
+        letter-spacing: -0.025em;
+        text-align: justify;
+        padding: 0 40px;
+       
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 .affix {
     padding: 0;
     background-color: #111;
+    z-index: 9999;
 }
 
 
