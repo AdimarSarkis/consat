@@ -1,19 +1,54 @@
-:root{
+:root {
   --corDegrade: linear-gradient(90deg, rgba(1,131,40,1) 5%, rgba(40,167,69,1) 31%, rgba(0,230,118,1) 83%);
-
 }
 
-.contato{
+.contato {
+  font-family: 'Trirong', serif;
+}
+
+.conteudoContado > .title {
+  font-family: 'Abhaya Libre', serif;
+}
+
+.contato .conteudoContado p {
+  font-family: 'Trirong', serif;
+}
+
+.container-contact {
+  font-family: 'Trirong', serif;
+}
+
+.container-contact .contatoInfo {
+  font-family: 'Trirong', serif;
+}
+
+.container-contact .contatoInfo .box {
+  font-family: 'Trirong', serif;
+}
+
+.container-contact .contatoInfo .box .icone {
+  font-family: 'Trirong', serif;
+}
+
+.container-contact .contatoInfo .box:hover .icone {
+  font-family: 'Trirong', serif;
+}
+
+.container-contact .contatoInfo .box .texto {
+  font-family: 'Trirong', serif;
+}
+
+.contato {
   margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #323232;
-    -webkit-box-shadow: 0px -5px 36px 8px rgba(0,0,0,0.75);
--moz-box-shadow: 0px -5px 36px 8px rgba(0,0,0,0.75);
-box-shadow: 0px -5px 36px 8px rgba(0,0,0,0.75);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #323232;
+  -webkit-box-shadow: 0px -5px 36px 8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px -5px 36px 8px rgba(0,0,0,0.75);
+  box-shadow: 0px -5px 36px 8px rgba(0,0,0,0.75);
 }
 
 .conteudoContado > .title {
@@ -23,12 +58,13 @@ box-shadow: 0px -5px 36px 8px rgba(0,0,0,0.75);
   color: #fff;
 }
 
-.contato .conteudoContado p{
+.contato .conteudoContado p {
   font-size: 1.1em;
   font-weight: 300;
   color: #fff;
 }
-.container-contact{
+
+.container-contact {
   width: 80%;
   display: flex;
   flex-direction: row;
@@ -36,20 +72,22 @@ box-shadow: 0px -5px 36px 8px rgba(0,0,0,0.75);
   align-items: center;
   padding: 70px;
 }
-.container-contact .contatoInfo{
+
+.container-contact .contatoInfo {
   width: 50%;
   display: flex;
   flex-direction: column;
-
   min-height: 400px;
 }
-.container-contact .contatoInfo .box{
+
+.container-contact .contatoInfo .box {
   position: relative;
   padding: 20px 0px;
   display: flex;
   cursor: pointer;
 }
-.container-contact .contatoInfo .box .icone{
+
+.container-contact .contatoInfo .box .icone {
   min-width: 60px;
   height: 60px;
   background: #fff;
@@ -60,10 +98,12 @@ box-shadow: 0px -5px 36px 8px rgba(0,0,0,0.75);
   font-size: 1.75em;
   transition: 0.5s;
 }
-.container-contact .contatoInfo .box:hover .icone{
+
+.container-contact .contatoInfo .box:hover .icone {
   background: var(--corDegrade);
 }
-.container-contact .contatoInfo .box .texto{
+
+.container-contact .contatoInfo .box .texto {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
@@ -71,18 +111,20 @@ box-shadow: 0px -5px 36px 8px rgba(0,0,0,0.75);
   color: #fff;
   font-weight: 300;
 }
-.container-contact .contatoInfo .box .texto h3{
+
+.container-contact .contatoInfo .box .texto h3 {
   font-weight: 500;
   background: var(--corDegrade);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 2px;
-  
 }
-.container-contact .contatoInfo .box .texto p{
+
+.container-contact .contatoInfo .box .texto p {
   margin-left: 10px;
 }
-.container-contact .contatoInfo  .txt{
+
+.container-contact .contatoInfo .txt {
   color: #fff;
   margin-top: 5px;
   font-weight: 500;
@@ -90,44 +132,53 @@ box-shadow: 0px -5px 36px 8px rgba(0,0,0,0.75);
   padding-left: 10px;
   line-height: 1em;
 }
-.redes{
+
+.redes {
   position: relative;
   display: flex;
   gap: 30px;
   margin: 20px 0;
 }
-.redes li{
+
+.redes li {
   list-style: none;
 }
-.redes li a{
+
+.redes li a {
   color: #fff;
   font-size: 2em;
 }
-.redes li a:hover{
+
+.redes li a:hover {
   color: #e03f75;
 }
-.contatoForm h2{
+
+.contatoForm h2 {
   font-size: 2em;
   font-weight: 500;
   color: #fff;
 }
-.container-contact .contatoForm{
+
+.container-contact .contatoForm {
   position: relative;
   width: 40%;
   box-shadow: 10px 5px 20px 1px black;
   min-height: 100px;
   padding: 60px;
 }
-.container-contact .contatoForm .inputBox{
+
+.container-contact .contatoForm .inputBox {
   position: relative;
   width: 100%;
   margin-top: 20px;
 }
-.container-contact .contatoForm .inputBox textarea{
+
+.container-contact .contatoForm .inputBox textarea {
   height: 150px;
 }
+
 .container-contact .contatoForm .inputBox input,
-.container-contact .contatoForm .inputBox textarea{
+.container-contact .contatoForm .inputBox textarea {
   width: 100%;
   padding: 5px 0;
   font-size: 1.1em;
@@ -138,7 +189,8 @@ box-shadow: 0px -5px 36px 8px rgba(0,0,0,0.75);
   background: none;
   color: aliceblue;
 }
-.inputBox i{
+
+.inputBox i {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -147,7 +199,8 @@ box-shadow: 0px -5px 36px 8px rgba(0,0,0,0.75);
   background: #fff;
   overflow: hidden;
 }
-.inputBox i::before{
+
+.inputBox i::before {
   content: '';
   position: absolute;
   left: -100%;
@@ -157,15 +210,17 @@ box-shadow: 0px -5px 36px 8px rgba(0,0,0,0.75);
   animation: animacao 2s linear infinite;
   transition: 0.5s;
 }
-@keyframes animacao{
-  0%{
-      background-position-x: 0px;
+
+@keyframes animacao {
+  0% {
+    background-position-x: 0px;
   }
-  100%{
-      background-position-x: 345px;
+  100% {
+    background-position-x: 345px;
   }
 }
-.container-contact .contatoForm .inputBox span{
+
+.container-contact .contatoForm .inputBox span {
   position: absolute;
   left: 0;
   pointer-events: none;
@@ -175,10 +230,11 @@ box-shadow: 0px -5px 36px 8px rgba(0,0,0,0.75);
   color: rgb(155, 155, 155);
   transition: 0.5s;
 }
+
 .container-contact .contatoForm .inputBox input:focus ~ span,
 .container-contact .contatoForm .inputBox textarea:focus ~ span,
 .container-contact .contatoForm .inputBox input:valid ~ span,
-.container-contact .contatoForm .inputBox textarea:valid ~ span{
+.container-contact .contatoForm .inputBox textarea:valid ~ span {
   background: var(--corDegrade);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -186,13 +242,15 @@ box-shadow: 0px -5px 36px 8px rgba(0,0,0,0.75);
   transform: translateY(-23px);
   color: aliceblue;
 }
+
 .container-contact .contatoForm .inputBox input:focus ~ i::before,
 .container-contact .contatoForm .inputBox textarea:focus ~ i::before,
 .container-contact .contatoForm .inputBox input:valid ~ i::before,
-.container-contact .contatoForm .inputBox textarea:valid ~ i::before{
+.container-contact .contatoForm .inputBox textarea:valid ~ i::before {
   left: 0;
 }
-.container-contact .contatoForm .inputBox input[type="submit"]{
+
+.container-contact .contatoForm .inputBox input[type="submit"] {
   width: 100px;
   background: var(--corDegrade);
   color: #fff;
@@ -201,4 +259,73 @@ box-shadow: 0px -5px 36px 8px rgba(0,0,0,0.75);
   padding: 10px;
   font-size: 1.1em;
   font-weight: 500;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .container-contact {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .container-contact .contatoInfo,
+  .container-contact .contatoForm {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .container-contact .contatoForm {
+    box-shadow: none;
+  }
+}
+@media (min-width: 1024px) {
+  .container-contact{
+    padding-inline: 0;
+    gap: 70px;
+  }
+  .container-contact .contatoForm {
+    width: 60%;
+  }
+
+  .container-contact .contatoInfo {
+    width: 40%;
+
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container-contact{
+    padding-inline: 0;
+    gap: 70px;
+  }
+  .container-contact .contatoForm {
+    width: 70%;
+  }
+
+  .container-contact .contatoInfo {
+    width: 30%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contatoInfo{
+    padding: 0;
+  }
+  .conteudoContado > .title {
+    font-size: 32px;
+  }
+
+  .container-contact .contatoForm .inputBox input,
+  .container-contact .contatoForm .inputBox textarea {
+    font-size: 1em;
+  }
+
+  .container-contact .contatoForm .inputBox span {
+    font-size: 0.9em;
+  }
+
+  .container-contact .contatoForm .inputBox input[type="submit"] {
+    width: 80px;
+    font-size: 1em;
+  }
+  
 }
