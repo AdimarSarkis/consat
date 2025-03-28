@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "Consulta Jurídica",
       id: 1,
       description:
-        "Oferecemos consultoria jurídica especializada para diversas áreas do direito.",
+        "Oferecemos consultoria jurídica especializada gratuita para diversas áreas do direito.",
       details:
         "Consiste em tirar pequenas dúvidas ou fornecer informações pelo telefone ou whatsapp quanto aos direitos trabalhistas e previdenciários. Neste caso não analizaremos nenhum documento.",
     },
