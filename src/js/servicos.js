@@ -86,7 +86,8 @@ document.addEventListener("DOMContentLoaded", function () {
       id: 1,
       description:
          "Prestamos serviços contábeis, incluindo abertura, manutenção e encerramento de empresas",
-       details: "Oferecemos serviços completos de contabilidade, incluindo escrituração contábil, apuração de impostos, folha de pagamento, gestão financeira e regularização de empresas. Garantimos conformidade legal e eficiência para o seu negócio!"     
+      details: "Oferecemos serviços completos de contabilidade. Garantimos conformidade legal e eficiência para o seu negócio!"     
+      ,diferenciais: "Garantimos demonstrativos contábeis e guias de impostos sempre no prazo, com processos ágeis e eficientes. Nossa integração contábil automatizada elimina a necessidade de envio de documentos físicos, tornando tudo mais prático. Além disso, disponibilizamos pastas de arquivos em tempo real para facilitar o acesso às suas informações. Oferecemos consultoria e assessoria gerencial contábil, transformando sua contabilidade em uma verdadeira ferramenta de apoio à gestão. Com isso, você ganha mais tempo para focar no que realmente importa: o crescimento do seu negócio."
     },
     {
       title: "Intermediações",
@@ -94,18 +95,22 @@ document.addEventListener("DOMContentLoaded", function () {
       description:
          "Intermediamos acordos, conciliações e negócios em geral (exceto imobiliários)",
        details: "Oferecemos serviços de intermediamos acordos, conciliações e negócios em geral (exceto imobiliários), garantindo segurança e conformidade para sua empresa.",
-    },
+       diferenciais: "Intermediamos acordos, conciliações e negócios, facilitando a comunicação entre as partes para alcançar soluções justas e vantajosas. Com um processo eficiente e imparcial, buscamos resolver conflitos, formalizar parcerias e garantir negociações seguras, sempre com foco na transparência e no melhor resultado para todos os envolvidos."
+    
+      },
     {
       title: "Direitos Trabalhista e Previdenciários",
       id: 3,
       description: "Prestamos serviços de direitos trabalhistas e previdenciários",
-      details: "Oferecemos assessoria em direitos trabalhistas e previdenciários, incluindo registro, folha de pagamento, FGTS, aposentadoria e benefícios do INSS, garantindo conformidade e segurança para sua empresa."
+      details: "Oferecemos assessoria em direitos trabalhistas e previdenciários, incluindo registro, folha de pagamento, FGTS, aposentadoria e benefícios do INSS, garantindo conformidade e segurança para sua empresa.",
+    diferenciais: "O cálculo da folha de pagamento e pró-labore envolve a definição de salários, benefícios e descontos dos funcionários e sócios. Já a apuração dos encargos trabalhistas e sociais foca no recolhimento de tributos como INSS, FGTS e IRRF. Enquanto a folha garante a remuneração correta, a apuração mantém a empresa em conformidade com a legislação."
     },
     {
       title: "Saúde e Segurança do Trabalho",
       id: 4,
       description: "Serviços de Saúde e Segurança do Trabalho para médias, pequenas empresas e MEIs.",
-      details: "Elaboramos PGR, laudos (PCMSO, LTCAT, LI) e Declaração de Inexistência de Riscos, além de auxiliar no controle de EPIs e na saúde dos colaboradores, garantindo conformidade com e-Social e Fisco."
+      details: "Elaboramos PGR, laudos (PCMSO, LTCAT, LI) e Declaração de Inexistência de Riscos, além de auxiliar no controle de EPIs e na saúde dos colaboradores, garantindo conformidade com e-Social e Fisco.",
+      diferenciais: "A gestão de SST (Segurança e Saúde do Trabalho) integrada ao e-Social garante o envio correto dos eventos obrigatórios, como acidentes de trabalho e monitoramento da saúde ocupacional. Com um sistema integrado à folha de pagamento, é possível centralizar informações, gerar relatórios e gráficos para análise, além de controlar exames admissionais, demissionais e periódicos, assegurando a conformidade legal e a segurança dos colaboradores."
     },
     {
           title: "Terceirização de Serviços",
@@ -113,10 +118,12 @@ document.addEventListener("DOMContentLoaded", function () {
           description:
             "Oferecemos serviços de terceirização para diversas áreas da sua empresa.",
           details: "Temos parceiros selecionados com quem trabalhamos. Para conhecê-los, clique em 'Saiba mais'",
-    },
+        },
 
   ]
 const servicesContainer = document.getElementById("services-container");
+const detalhesContainer = document.getElementById("conteudo-detalhes");
+const detalhesSection = document.getElementById("detalhes-servico");
 
   services.forEach((service) => {
     const card = document.createElement("div");
@@ -148,7 +155,7 @@ const servicesContainer = document.getElementById("services-container");
           <h1>${service.title}</h1>
           <h2>${service.description}</h2>
           <p>${service.details}</p> 
-
+<button class="saiba-mais" data-id="${service.id}">Saiba Mais</button>
         </div>
         </div>`
       }
@@ -162,10 +169,29 @@ const servicesContainer = document.getElementById("services-container");
         <h1>${service.title}</h1>
         <h2>${service.description}</h2>
         <p>${service.details}</p> 
+        <button class="saiba-mais" data-id="${service.id}">Saiba Mais</button>
       </div>
     </div>
             
         `;}
     servicesContainer.appendChild(card);
+    servicesContainer.addEventListener("click", function (e) {
+      if (e.target.classList.contains("saiba-mais")) {
+        const serviceId = parseInt(e.target.getAttribute("data-id"));
+        const selectedService = services.find((service) => service.id === serviceId);
+  
+        if (selectedService) {
+          detalhesContainer.innerHTML = `
+            <h3>${selectedService.title}</h3>
+            <p>${selectedService.diferenciais}</p>
+          `;
+        }
+         // Exibe a seção de detalhes
+         detalhesSection.style.display = "block";
+         detalhesSection.scrollIntoView({ behavior: "smooth" });
+  
+      }
+    });
   });
+  detalhesSection.style.display = "none";
 });

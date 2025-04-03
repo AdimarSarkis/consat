@@ -3,6 +3,7 @@
 
 @import url(./header.css);
 @import url(./servicos.css);
+@import url(./details.css);
 @import url(./about.css);
 @import url(./parceiros.css);
 @import url(./contact.css);
@@ -15,9 +16,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
+html{
+    scroll-behavior: smooth;
 
+}
 @keyframes appear {
     from{
         opacity: 0;

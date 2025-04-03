@@ -340,7 +340,7 @@
     position: relative;
     isolation: isolate;
     overflow: hidden;
-    top: calc(50% - calc(630px / 2));
+    top: 350px;
     color: aliceblue;
     border-radius: 0px;
     background: linear-gradient(315deg, #2d2d2d, #363636);
@@ -376,7 +376,7 @@
 }
 
 /* Responsividade para telas menores */
-@media screen and (max-width: 768px) {
+@media (min-width: 768px) and (max-width:1274px){
     .titulo-header {
         font-size: 2.5rem; /* Ajuste para telas menores */
     }
@@ -384,6 +384,9 @@
     .texto-header, strong {
         font-size: 1.5rem; /* Ajuste para telas menores */
         padding: 0 20px;
+    }
+    .container-header{
+        top: 350px;
     }
 }
 

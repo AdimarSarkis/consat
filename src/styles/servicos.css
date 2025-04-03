@@ -1,6 +1,6 @@
 .servicos-container {
     background-color: #f3f4f6;
-    padding: 20px;
+    padding: 50px;
 }
 
 .section {
@@ -27,140 +27,17 @@
     }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1719px) {
     .services-container {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .services-container {
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 }
-/*
-.card {
-    background-color: #fff;
-    padding: 15px; 
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
-
-.card .icon {
-    font-size: 28px; 
-    color: #555;
-    margin-bottom: 10px;
-}
-
-.card .title {
-    font-size: 18px; 
-    margin-bottom: 10px;
-}
-
-.card .description {
-    font-size: 14px; 
-    margin-bottom: 10px;
-}
-
-.card .details {
-    display: none;
-    font-size: 14px;
-    margin-top: 10px;
-}
-
-.card.expanded .details {
-    display: block;
-}
-
-.card.expanded .description {
-    display: none;
-}
-
-.expanded {
-    grid-column: span 1 / span 1;
-    grid-row: span 1 / span 1;
-    order: -9999;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-@media (min-width: 640px) {
-    .expanded {
-        grid-column: span 2 / span 2;
-        grid-row: span 2 / span 2;
-    }
-}
-
-@media (min-width: 1024px) {
-    .expanded {
-        grid-column: span 3 / span 3;
-        grid-row: span 3 / span 3;
-    }
-}
-
-.servicos-container {
-    font-family: 'Trirong', serif;
-}
-
-.section {
-    font-family: 'Trirong', serif;
-}
-
-.title {
-    font-family: 'Abhaya Libre', serif;
-}
-
-.services-container {
-    font-family: 'Trirong', serif;
-}
-
-.card {
-    font-family: 'Trirong', serif;
-}
-
-.card:hover {
-    font-family: 'Trirong', serif;
-}
-
-.card .icon {
-    font-family: 'Trirong', serif;
-}
-
-.expanded {
-    font-family: 'Trirong', serif;
-}
-
-.card .title {
-    font-family: 'Abhaya Libre', serif;
-}
-
-.card .description {
-    font-family: 'Trirong', serif;
-}
-
-.card .details {
-    font-family: 'Trirong', serif;
-}
-
-.card.expanded .details {
-    font-family: 'Trirong', serif;
-}
-
-.card.expanded .description {
-    font-family: 'Trirong', serif;
-} */
-
-
 
 .blog-card {
     display: flex;
@@ -293,16 +170,80 @@
         bottom: 0;
         z-index: -1;
    }
-    .blog-card.alt {
-        flex-direction: row-reverse;
-   }
-    .blog-card.alt .description:before {
-        left: inherit;
-        right: -10px;
-        transform: skew(3deg);
-   }
+   .blog-card.alt .description:before {
+       left: inherit;
+       right: -10px;
+       transform: skew(3deg);
+    }
     .blog-card.alt .details {
         padding-left: 25px;
-   }
+    }
 }
 
+
+/* .blog-card.alt {
+    flex-direction: row-reverse;
+} */
+
+
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .blog-card .meta {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .blog-card .description {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+  
+  .blog-card h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .blog-card h2 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .blog-card p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: #777;
+  }
+  
+  .blog-card .saiba-mais {
+    margin-top: auto;
+    align-self: center;
+    background: #25d366;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .blog-card .saiba-mais:hover {
+    background: #1ebe5d;
+  }
