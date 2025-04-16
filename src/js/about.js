@@ -7,33 +7,41 @@ document.addEventListener("DOMContentLoaded", function () {
       icon: "🎓",
       color: "bg-blue-500",
       details:
-        "I graduat",
+        "Em 1997, a empresa foi oficialmente fundada em Sorocaba (SP), com a visão de realizar grandes sonhos. Embora o início tenha sido marcado por atividades diferentes das atuais, a base da empresa foi formada com muito empenho e dedicação familiar. No entanto, as dificuldades financeiras fizeram com que esses sonhos fossem temporariamente adiados.",
     },
     {
       id: 2,
-      date: "2019",
-      title: "First Job",
+      date: "2003–2006",
+      title: "Missão e Propósito",
       icon: "💼",
       color: "bg-green-500",
       details:
-        "I started my first job as a software developer at a local startup.",
+        "Durante esse período, nossa trajetória foi marcada por desafios pessoais significativos. O diagnóstico de uma doença grave em meu esposo nos forçou a enfrentar incertezas e a luta constante pelo acesso a direitos essenciais. Foi um período de intensa busca por justiça e soluções, que revelou a importância de lutar pelos direitos de quem enfrenta adversidades semelhantes. Essa experiência gerou o desejo profundo de transformar nossa dor em ação, ajudando outras pessoas que passavam por situações similares.",
     },
     {
       id: 3,
-      date: "2020",
-      title: "Industry Award",
+      date: "2010",
+      title: "Volta ao mercado",
       icon: "🏆",
       color: "bg-yellow-500",
-      details: "I won an industry award for my work on a new product.",
+      details: "Em 2010, a empresa passou por uma transformação importante: a reestruturação e formalização do contrato da empresa em Amparo (SP). Nesse ano, começamos a atuar oficialmente na consultoria trabalhista e previdenciária, oferecendo suporte para aqueles que precisavam acessar seus direitos. Essa mudança representou uma nova fase, com a expansão da nossa missão e o compromisso em prestar um serviço ético, eficiente e comprometido com o bem-estar de nossos clientes.",
     },
     {
       id: 4,
-      date: "2019",
-      title: "Volta da atividade",
+      date: "2011-2024",
+      title: "Capacitação e Crescimento",
       icon: "💡",
       color: "bg-purple-500",
-      details: "I co-founded",
+      details: "Após a reestruturação, dedicamos tempo à capacitação, realizando especializações e investindo em nossa missão. Esse período de pausa foi fundamental para fortalecer a empresa e preparar a equipe para os novos desafios. Com maior conhecimento e experiência, voltamos com uma atuação mais qualificada e pronta para atender as necessidades dos nossos clientes com ainda mais excelência.",
     },
+    {
+      id: 5,
+      date: "2025-atualmente",
+      title: "Expansão e Compromisso",
+      icon: "🌱",
+      details: 'Atualmente, nossa empresa continua em expansão, abrangendo novas áreas, como segurança do trabalho, intermediação de serviços e assessoria jurídica. Mantemos o compromisso de oferecer um atendimento próximo, transparente e humanizado, guiados por nossos valores de fé, ética e dedicação. A cada dia, trabalhamos para impactar positivamente a vida de nossos clientes, oferecendo soluções completas e eficientes para seus desafios.'
+    }
+
   ];
 
   const timeline = document.querySelector(".timeline");
@@ -99,9 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
           }, 500);
         } else {
           detailsContainer.innerHTML = `
-            <button id='fechar' class="icon"><svg width="39" height="39" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path>
-</svg></button>
+            
             <h3 class="title">${milestone.title}</h3>
             <p class="details">${milestone.details}</p>
           `;

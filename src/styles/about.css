@@ -146,13 +146,13 @@
   opacity: 0;
   flex-direction: column;
   align-items: center;
-  background-color: var(--secondary-color);
   padding: 20px;
   border-radius: 8px;
   color: var(--text-color);
   margin-top: 20px;
   transition: visibility 0s, opacity 0.5s linear;
-  max-width: 100%;
+  max-width: 70px;
+  max-height: 80px;
   box-sizing: border-box;
 }
 
@@ -165,13 +165,13 @@
 }
 
 .column .title {
-  font-size: 24px;
+  font-size: 32px;
   margin-bottom: 10px;
   color: var(--primary-color);
 }
 
 .column .details {
-  font-size: 16px;
+  font-size: 24px;
   line-height: 1.5;
   text-align: justify;
 }
@@ -275,3 +275,4 @@
   text-decoration: none;
   cursor: pointer;
 }
+
