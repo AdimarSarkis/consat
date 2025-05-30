@@ -228,6 +228,21 @@
 .blog-card:hover .details {
     left: 0%;
 }
+
+@media (max-width: 640px) {
+  .blog-card {
+    flex-direction: column !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+  .blog-card .meta {
+    height: 120px !important;
+  }
+  .blog-card .description {
+    padding: 10px !important;
+  }
+}
+
 @media (min-width: 640px) {
     .blog-card {
         flex-direction: row;
@@ -260,13 +275,6 @@
         padding-left: 25px;
     }
 }
-
-
-/* .blog-card.alt {
-    flex-direction: row-reverse;
-} */
-
-
 
 .blog-card {
     display: flex;
