@@ -340,7 +340,7 @@
     position: relative;
     isolation: isolate;
     overflow: hidden;
-    top: 350px;
+    top: 200px;
     color: aliceblue;
     border-radius: 0px;
     background: linear-gradient(315deg, #2d2d2d, #363636);
@@ -386,7 +386,7 @@
         padding: 0 20px;
     }
     .container-header{
-        top: 350px;
+        top: 150px;
     }
 }
 

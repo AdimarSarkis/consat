@@ -38,7 +38,6 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       // Adicione mais parceiros conforme necessário
     ];
-  
     const parceirosContainer = document.querySelector(".parceiros-container");
     parceiros.forEach((parceiro) => {
       const cardParceiro = document.createElement("div");
@@ -52,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <h3 class="profissao">${parceiro.profissao}</h3>
           <p class="details">${parceiro.details}</p>
           <p class="read-more">
-            <a href="#">Read More</a>
+            <a href='https://wa.me/5513981158016' target='_blank'>Contate-os por nosso intermedio</a>
           </p>
         </div>
       `;
