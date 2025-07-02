@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     const parceiros = [
       {
-        name: "Adimar Sarkis",
-        profissao: "Advogado",
-        photo: "https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg",
+        name: "BenSeg",
+        profissao: "Saúde e Segurança do Trabalho",
+        photo: "../../public/SST BENSEG.PNG",
         details: "Especialista em direito trabalhista e previdenciário.",
       },
       {
