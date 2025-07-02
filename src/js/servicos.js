@@ -133,36 +133,39 @@ document.addEventListener("DOMContentLoaded", function () {
     cardsContainer.className = "cards-container";
 
     servicesArray.forEach((service, index) => {
-      const card = document.createElement("div");
-      card.className = "card";
+  const card = document.createElement("div");
+  card.className = "card";
 
-      const isAltStyle = index % 2 === 0;
-      const isSpecialCase = service.id === 9;
+  const isAltStyle = index % 2 === 0;
+  const isSpecialCase = service.id === 9;
+  const isSaudeSeguranca = service.id === 1; // ID do serviço de Saúde e Segurança do Trabalho
 
-      card.innerHTML = `
-        <div class='blog-card ${isAltStyle ? "alt" : ""} block'>
-          <div class="meta">
-            <div class="photo" style="background-image: url(${
-              isAltStyle
-                ? "https://storage.googleapis.com/chydlx/codepen/blog-cards/image-2.jpg"
-                : "https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg"
-            })"></div>
-          </div>
-          <div class="description">
-            <h1>${service.title}</h1>
-            <h2>${service.description}</h2>
-            <p>${service.details}</p>
-            ${
-              isSpecialCase
-                ? '<p class="read-more"><a href="#parceiros">Saiba Mais</a></p>'
-                : `<button class="saiba-mais" data-id="${service.id}">Saiba Mais</button>`
-            }
-          </div>
-        </div>
-      `;
+  card.innerHTML = `
+    <div class='blog-card ${isAltStyle ? "alt" : ""} block'>
+      <div class="meta">
+        <div class="photo" style="background-image: url(${
+          isAltStyle
+            ? "https://storage.googleapis.com/chydlx/codepen/blog-cards/image-2.jpg"
+            : "https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg"
+        })"></div>
+      </div>
+      <div class="description">
+        <h1>${service.title}</h1>
+        <h2>${service.description}</h2>
+        <p>${service.details}</p>
+        ${
+          isSpecialCase
+            ? '<p class="read-more"><a href="#parceiros">Saiba Mais</a></p>'
+            : isSaudeSeguranca
+              ? `<p class="read-more"><a href="seguranca-saude.html">Saiba Mais</a></p>`
+              : `<button class="saiba-mais" data-id="${service.id}">Saiba Mais</button>`
+        }
+      </div>
+    </div>
+  `;
 
-      cardsContainer.appendChild(card);
-    });
+  cardsContainer.appendChild(card);
+});
 
     section.appendChild(cardsContainer);
     servicesContainer.appendChild(section);
